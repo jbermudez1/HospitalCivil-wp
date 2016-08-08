@@ -1,0 +1,599 @@
+/*
+	theme name:Hospital Civil de Culiacán
+	Author: Proyeccione
+	Author URI: http://proyeccione.com
+	description: Tema para HCC.
+	Version: 1.0
+*/
+// @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700,300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500');
+@import 'nib'
+background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval)
+	background-color startColor
+	background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+// .container
+// 	max-width 992px
+
+$hc-color = #2f96cc
+$hc-light = #52BEE1
+$comforta = 'Oxygen', sans-serif
+$height-nav = 9em
+.fontb
+	color $hc-color
+.fblue
+	font-size 2em
+	color $hc-color
+	background-color white
+body,html
+	height 100%
+body
+	color gray
+	background-color $hc-light
+.wrap
+	padding-top $height-nav
+	background-color white
+.istitle
+	font-weight 200
+	color white
+	font-size 2em
+	padding-bottom 1em
+// body
+// 	background-color #f3f3f3
+.goToAction
+	position absolute
+	background-color #7c5ff9
+	z-index 10
+	color white
+	border-radius 10em
+	width 2em
+	height 2em
+	display flex
+	justify-content center
+	align-items center
+	font-size 2.5em
+	box-shadow 1px 1px 3px gray
+	right 3em
+	top -1em
+	transition 0.3s all
+	&:hover
+		box-shadow none
+
+header
+	position absolute // change to fixed
+	z-index 99
+	width 100%
+	display flex
+	flex-flow column
+	background-color lime
+	height $height-nav
+	.shadow
+		background-color white
+		z-index 2
+		flex-grow 2
+	.top-line
+		background-color #C4DE7C
+		height 5px
+	.container
+		display flex
+		justify-content center
+		align-items center
+		height 100%
+		.logo
+			display flex
+			flex-grow 1
+			justify-content center
+			align-items center
+			img
+				max-width 10em
+				height auto
+		.rigth
+			display flex
+			flex-flow column
+			flex-grow 2
+			align-items flex-end
+			background-color white
+			.phone
+				color $hc-color
+				font-weight bold
+nav
+	background-color #52BEE1
+	box-shadow 0px 3px 10px rgba(0,0,0,0.5)
+	color white
+	font-family Roboto
+	height 2
+	// position relative
+	ul
+		display flex
+		list-style none
+		padding-left 0
+		height 100%
+		margin-bottom 0
+		li
+			padding-top 1em
+			padding-bottom 1em
+			// position relative
+			padding-left 1.5em
+			padding-right 1.5em
+			border-right solid 1px lightgray
+			transition all .3s ease
+			&:hover
+				background-color $hc-color
+				a
+					color white
+			a 
+				cursor pointer
+				font-size 1.2em
+				font-weight 100
+				color white
+				&:hover, &:visited, &:active, &:link 
+					text-decoration none	
+		ul.sub-menu
+			display none
+			flex-flow column
+			position absolute
+			left 0
+			top 0
+			// transform translate3d(0 ,-100%,0 )
+			background-color $hc-color
+			width 15em
+			height auto
+			border-radius 0 0 10px 10px
+			transition all .3s ease
+			li
+				border-right none !important
+				padding 0.6em
+				font-size 0.9em
+				border-bottom solid 1px rgba(255,255,255,0.5)
+				// background-color $hc-color
+				&:hover
+					background-color gray
+			li a
+				color white
+		&.show-sub-menu
+			transform translate3d(0 ,3.8em,0 ) !important
+.menus
+	position relative
+	.mconsultas
+		background-color #88D9EE
+	.submenu
+		width 100%
+		height 20em
+		position absolute
+		transform translate3d(0 ,-100%,0 )
+		transition all .3s ease
+	.reset-submenu
+		transform translate3d(0 ,0%,0 ) !important
+		position relative !important
+		.container
+			padding-top 2em
+			.list-wrap
+				display flex
+				.box
+					width 25%
+					ul
+						list-style none
+						margin 0
+						padding 0
+						color white
+						li
+							padding-top 0.5em
+							padding-bottom 0.5em
+							
+	.show-sub-menu
+			transform translate3d(0 ,0%,0 ) !important
+.banner
+	height 50%
+	display flex
+	font-family $comforta
+	// background-image url('../img/banner.jpg')
+	background-size cover
+	.color
+		// flex-basis 50%
+		flex-basis 100%
+		background-color rgba($hc-color, 0.8)
+		height 100%
+		div
+			width 60%
+			text-align center
+			left 0
+			right 0
+			margin-left auto
+			margin-right auto
+			height 100%
+			h3 
+				// font-size 2.2em
+				color white
+			p
+				font-style italic
+				color yellow
+	.photo
+		flex-basis 50%
+		background-position -10em, 5em
+	.container
+		display flex
+		justify-content center
+		align-items center
+		color white
+		height 100%
+		.slogan
+			text-align center
+			h1
+				font-weight 100
+				font-size 2em
+				text-shadow 0px 1px 8px black
+			small
+				font-size 1em
+				font-weight 200
+				text-shadow 0px 1px 8px black
+.banner-single
+	height 10em	
+	background-size cover
+	margin-bottom 3em
+	color white
+	display flex
+	align-items center
+	ul
+		list-style none
+		padding 0
+		li
+			a
+				color #ff0
+.main
+	position relative
+	margin-top 1em
+	.box
+		box-shadow 1px 2px 7px gray
+		margin-bottom 2.5em
+		&__title
+			background-color #f3f3f3
+			font-size 1.2em
+			padding 0.5em
+			color gray
+		&__main
+			background-color white
+			padding 0.5em
+			height 100%
+// consultas
+.flex-container
+	display flex
+	flex-wrap wrap
+	div
+		flex-basis 50%
+		color white
+		display flex
+		justify-content center
+		align-items center
+		text-align center
+		height 3.5em
+		font-size 1.3em
+		border solid 1px white
+		font-family 'Roboto', sans-serif
+		text-shadow 0px 0px 8px gray
+		cursor pointer
+		transition all 0.3s ease
+		&:hover
+			opacity 0.5
+	.c1
+		background-color #79C1B6
+	.c2
+		background-color #7AA9D1
+	.c3
+		background-color #D6A6D1
+	.c4
+		background-color #E88F6A
+	.c5
+		background-color #D9828A
+	.c6
+		background-color #45988C
+	.c7
+		background-color #467CA9
+	.c8
+		background-color #BD74B6
+	.c9
+		background-color #D25E2D
+	.c10
+		background-color #A64750
+	
+.details
+	&-titles
+		text-align center
+		h3
+			font-size 3em
+			font-weight 100
+			span
+				font-weight bold
+	ul
+		display flex
+		justify-content center
+		list-style none
+		flex-wrap wrap
+		margin-bottom 3em
+		li
+			font-size 1.5em
+			margin-left 1em
+			margin-right 1em
+			&:nth-child(odd)
+				color #42ACD7
+.green
+	border-top 3px solid #c4de7c !important
+	width 25em
+.subtitle
+	font-size 1.3em
+	padding-top 1em
+.wrap-icons
+	justify-content space-between
+	div
+		padding-top 1em
+		padding-bottom 1em
+		text-align center
+		color gray
+		// height 15em
+		a
+			img
+				max-width 7em
+				transition all 0.2s ease
+				&:hover
+					max-width  9em
+				
+		.icon-title
+			color #494949
+			font-weight bold
+			padding-top 1em
+			font-size 1.3em
+			line-height 1px
+		span
+			font-size 1em
+.wrap-promo
+	display flex
+	.img
+		width 50%
+		background-color lightgray
+	.description
+		width 100%
+		padding-left 1em
+		color gray
+		button
+			border 0
+			color white
+			background-color #7c5ff9
+			padding 0.5em
+			margin-top 1em
+			
+.welcome
+	text-align center
+	padding-left 4em
+	padding-right 5em
+	color gray
+	font-style italic
+.person
+	margin-top 4em
+	margin-bottom 1em
+	.photo
+		background-color lightgray
+		width 40%
+		flex-grow 1
+	.profile
+		padding-left 2em
+		.name
+			font-size 2em
+			font-weight bold
+			line-height 1em
+			color #504f4f
+		.cargue
+			color #a2a2a2
+			font-size 2em
+			font-weight 100
+		.description
+			color #a2a2a2
+// 
+.home-post
+	.title-section
+		border-top solid 1px lightgray
+		text-align center
+		margin-bottom 1em
+		margin-top 2em
+		position relative
+		&:before
+			text-align center
+			content ""
+			background-image url('img/servicios.jpg')
+			background-size cover
+			left 0
+			right 0
+			top -35px
+			border solid 10px white
+			margin-left auto
+			margin-right auto
+			height 70px
+			width 70px
+			border-radius 20em
+			position absolute
+			background-color $hc-color
+		h3
+			color gray
+			font-weight 300
+			margin-top 1em
+			margin-bottom 1.3em
+			font-size 2.5em
+			font-family $comforta
+			span
+				color $hc-color
+	&__container
+		display flex
+		flex-wrap wrap
+		&__wrap
+			width 50%
+			padding 1em
+			display flex
+			.info
+				width 50%
+				order 1
+				text-align center
+				display flex
+				flex-flow column
+				justify-content center
+				hr 
+					margin-top 0.5em !important
+					margin-bottom 0.5em !important
+					width 50%
+				.title-post
+					font-size 1.3em
+					line-height 1em
+					font-family $comforta
+					a
+						color $hc-color	
+				p
+					color gray !important
+			.tumb
+				width 50%
+				order 2
+				padding 0.5em
+				img
+					width 100%
+					height auto
+.title-post
+	font-size 2em
+	line-height 1em
+	font-family $comforta
+	color $hc-color
+.home-post__container__wrap:nth-child(1n+3)
+	.info
+		order 2
+	.tumb
+		order 1
+// 
+.map
+	background-image url("../img/mapa.jpg")
+	height 40%
+	background-size cover
+	position relative
+.wrap3box
+	display flex
+	flex-wrap wrap
+	.box
+		flex-basis 33.33%
+		>div
+			margin 1em
+			padding 1em
+			box-shadow 1px 2px 7px gray
+
+footer
+	background-color $hc-color
+	width 100%
+	.container
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		color white
+		div.datos
+			padding 1em
+			justify-content flex-start
+			flex-grow 2
+		.redes
+			padding 1em
+			i
+				font-size 2em
+				padding-left 0.5em
+		.address
+			text-align right
+			padding 1em
+			flex-grow 1
+			
+			
+.specialist
+	background-color lightgray
+.contact
+	// height 400px
+	padding-bottom 2em
+	background-image url('img/banner-single.jpg')
+	background-size cover
+	// background-linear-gradient(top, #2f96cc, 20%, #5db7f5, 70%)
+// single-home
+.news-title
+	padding-bottom 2em
+.title
+	font-family $comforta
+	font-weight 100
+	font-size 3em
+	color $hc-color
+.news
+	font-size 1.2em
+	background-color white
+	padding 4em
+	box-shadow 1px 1px 8px black
+	&-container
+		display inline-flex
+		&-text
+			img
+				float right
+				margin 2em
+		&__img
+			padding-left 1em
+			flex-shrink 0
+			img
+				border solid 1px lightgray
+@media (min-width: 768px)
+	.flex-container
+		div
+			flex-basis 20%
+	header
+		.container
+			.logo
+				justify-content flex-start
+	.wrap-icons
+		padding-left 12em
+		padding-right 12em
+	// banner
+	.banner
+		// height 50%
+		min-height 25em
+		display flex
+		.color
+			flex-basis 50%
+			background-color $hc-color
+			min-height 25em
+			div
+				width 60%
+				text-align center
+				left 0
+				right 0
+				margin-left auto
+				margin-right auto
+				height 100%
+				// margin-top 6em
+				h3 
+					// font-size 2em
+					color white
+					span
+						color #c4de7c
+				p
+					font-style italic
+					color yellow
+	// 
+	.main
+		top -1em
+		margin-top 0
+	.wrap-icons
+		display flex
+	.person
+		display flex
+@media (min-width: 1200px)
+	.banner
+		.color
+			h3
+				// font-size 4em
+
+
+
+
+
+
+
+	
+
+

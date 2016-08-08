@@ -1,0 +1,297 @@
+/*
+	theme name:ACCM Web
+	Author: Proyeccione
+	Author URI: http://proyeccione.com
+	description: Tema para Accm.
+	Version: 1.0
+*/
+h2 {
+  color: #808080;
+  font-weight: 200;
+}
+h2:first-line {
+  color: #125daa;
+}
+h2 span {
+  color: #808080;
+}
+html,
+body {
+  min-heigh: 100%;
+  height: 100%;
+}
+header {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+header .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+header .container .burger {
+  font-size: 2em;
+  -webkit-flex-basis: 10%;
+  flex-basis: 10%;
+}
+header .container .logo {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  text-align: center;
+}
+header .container .logo img {
+  height: 100px;
+  display: inline-block;
+}
+header .container nav {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -o-box-flex: 2;
+  -ms-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  text-align: right;
+}
+header .container nav div {
+  background-color: #125daa;
+  display: inline-block;
+  padding: 1em;
+  -webkit-box-shadow: 1px 1px 5px #000;
+  box-shadow: 1px 1px 5px #000;
+}
+header .container nav div ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .container nav div ul li a {
+  color: #fff;
+}
+header .container nav div ul li a:after {
+  content: "l";
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+}
+header .container .redes {
+  font-size: 2.5em;
+  padding-left: 0.5em;
+}
+header .container .redes a .fa-facebook {
+  color: #125daa;
+}
+header .container .redes a .fa-twitter {
+  color: #55acee;
+}
+.banner {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 50%;
+}
+.banner .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+.banner .container .text {
+  margin-bottom: 4em;
+}
+.banner .container .text h1 {
+  color: #fff;
+  font-weight: 200;
+}
+.banner .container .text p {
+  color: #ff0;
+}
+.main {
+  background-color: #f7f7f7;
+  padding-bottom: 2em;
+}
+.main .wrapBox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.main .wrapBox .box,
+.main .wrapBox .widget {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  padding: 0.3em;
+  list-style: none;
+}
+.main .wrapBox .box div,
+.main .wrapBox .widget div {
+  min-height: 200px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.bottom .threboxContainer .box,
+.bottom .threboxContainer .widget {
+  -webkit-flex-basis: 32.33%;
+  flex-basis: 32.33%;
+  margin: 3px;
+}
+.bottom .threboxContainer .box__title,
+.bottom .threboxContainer .widget__title,
+.bottom .threboxContainer .box .widgettitle,
+.bottom .threboxContainer .widget .widgettitle {
+  background-color: #125daa;
+  color: #fff !important;
+  font-size: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  font-weight: 200;
+}
+.bottom .threboxContainer .box__title:first-line,
+.bottom .threboxContainer .widget__title:first-line,
+.bottom .threboxContainer .box .widgettitle:first-line,
+.bottom .threboxContainer .widget .widgettitle:first-line {
+  color: #fff;
+}
+.bottom .threboxContainer .box__main,
+.bottom .threboxContainer .widget__main {
+  padding: 0.5em;
+}
+.bottom .threboxContainer li {
+  list-style: none;
+}
+.mobile {
+  background-color: #005bab;
+  position: fixed;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  margin-top: 100px;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile ul li {
+  padding: 0.5em;
+  background-color: rgba(255,255,255,0.2);
+  margin-top: 2px;
+}
+.mobile ul li a {
+  color: #fff;
+}
+.showMobilMenu {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+footer {
+  border-top: solid 5px #fbe108;
+  color: #808080;
+  text-align: center;
+}
+footer .lineColor {
+  background-color: #f00;
+  height: 10px;
+  border-bottom: solid 5px #005bab;
+}
+#iso-9001 {
+  background-image: url("../img/ISO9001.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.page img {
+  width: auto;
+  height: 100%;
+}
+.all-post {
+  display: none;
+}
+@media (min-width: 768px) {
+  header {
+    position: absolute;
+  }
+  header .container {
+    margin-top: 1em;
+  }
+  header .container .logo {
+    -webkit-flex-basis: 20%;
+    flex-basis: 20%;
+  }
+  .main .wrapBox .box {
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  .bottom .threboxContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .main .wrapBox .box {
+    -webkit-flex-basis: 33.33%;
+    flex-basis: 33.33%;
+  }
+}

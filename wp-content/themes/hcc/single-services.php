@@ -2,7 +2,7 @@
 
 <div class="wrap">
 	<!-- -->
-	<section class="menus">
+	<!-- <section class="menus">
           <div class="submenu mconsultas reset-submenu" >
             <div class="container">
               <div class="list-wrap">
@@ -41,7 +41,7 @@
               </div>
             </div>
           </div>
-      </section>
+      </section> -->
 	<!-- -->
 
  <section class="container " style="min-height: 100vh">

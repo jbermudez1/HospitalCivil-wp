@@ -305,18 +305,10 @@ nav ul.show-sub-menu {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.menus .reset-submenu {
-  -webkit-transform: translate3d(0, 0%, 0) !important;
-  -moz-transform: translate3d(0, 0%, 0) !important;
-  -o-transform: translate3d(0, 0%, 0) !important;
-  -ms-transform: translate3d(0, 0%, 0) !important;
-  transform: translate3d(0, 0%, 0) !important;
-  position: relative !important;
-}
-.menus .reset-submenu .container {
+.menus .submenu .container {
   padding-top: 2em;
 }
-.menus .reset-submenu .container .list-wrap {
+.menus .submenu .container .list-wrap {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -324,18 +316,26 @@ nav ul.show-sub-menu {
   display: box;
   display: flex;
 }
-.menus .reset-submenu .container .list-wrap .box {
+.menus .submenu .container .list-wrap .box {
   width: 25%;
 }
-.menus .reset-submenu .container .list-wrap .box ul {
+.menus .submenu .container .list-wrap .box ul {
   list-style: none;
   margin: 0;
   padding: 0;
   color: #fff;
 }
-.menus .reset-submenu .container .list-wrap .box ul li {
+.menus .submenu .container .list-wrap .box ul li {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+.menus .submenu .reset-submenu {
+  -webkit-transform: translate3d(0, 0%, 0) !important;
+  -moz-transform: translate3d(0, 0%, 0) !important;
+  -o-transform: translate3d(0, 0%, 0) !important;
+  -ms-transform: translate3d(0, 0%, 0) !important;
+  transform: translate3d(0, 0%, 0) !important;
+  position: relative !important;
 }
 .menus .show-sub-menu {
   -webkit-transform: translate3d(0, 0%, 0) !important;

@@ -13,7 +13,7 @@
         <div class="top-line"></div>
         <div class="shadow">
           <div class="container ">
-            <a href="post.php?post=2">
+            <a href="/HospitalCivil-wp">
               <div class="logo"><img src="<?php echo get_template_directory_uri().'/img/logo.jpg' ?>" class="img-responsive"></div>
 
             </a>

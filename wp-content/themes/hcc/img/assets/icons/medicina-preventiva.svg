@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="37px" height="33px" viewBox="0 0 37 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1 Copy 22</title>
+    <title>Apple Watch 42mm</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-HD-Copy-8" sketch:type="MSArtboardGroup" transform="translate(-433.000000, -326.000000)" fill="#71ADCE">
-            <g id="Page-1-Copy-22" sketch:type="MSLayerGroup" transform="translate(433.000000, 326.000000)">
-                <path d="M21.2898596,8.12413179 L23.6240112,10.2595532 L22.8268339,10.9885462 L20.4359851,8.80125474 L18.6144998,10.4679709 L21.1761235,12.811185 L20.4817527,13.4464369 L17.920129,11.1029103 L15.586319,13.2383318 L18.1834639,15.6143553 L17.4545966,16.2811667 L14.8004129,13.8529607 L7.62786648,20.4148351 L7.62786648,24.4766354 L3.41549821e-05,32.4968084 L9.10814343,26.1433515 L13.7757634,26.4558218 L30.5687438,11.0925988 L24.3067693,5.3640824 L21.2898596,8.12413179 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
-                <path d="M27.8078599,0.0260287687 L26.9222212,0.83626403 L28.6443155,2.41173884 L25.7267968,5.08054693 L30.7574843,9.68292069 L33.6750029,7.01380014 L35.3544034,8.55021617 L36.2400421,7.74029338 L27.8078599,0.0260287687 Z" id="Fill-2" sketch:type="MSShapeGroup"></path>
+        <g id="Apple-Watch-42mm" sketch:type="MSArtboardGroup" fill="#71ADCE">
+            <g id="Page-1-Copy-22" sketch:type="MSLayerGroup" transform="translate(6.000000, 8.000000)">
+                <path d="M15.5358435,5.90845948 L17.2391433,7.46149325 L16.6574193,7.99166998 L14.9127458,6.40091254 L13.5835539,7.61306971 L15.4528469,9.31722544 L14.9461439,9.77922685 L13.0768509,8.07484387 L11.3738004,9.62787764 L13.2690142,11.3558947 L12.7371381,11.8408485 L10.8003013,10.0748805 L5.56628094,14.8471528 L5.56628094,17.8011894 L2.49239059e-05,23.6340425 L6.64648305,19.0133466 L10.0525841,19.2405976 L22.3069212,8.06734459 L17.7373722,3.90115084 L15.5358435,5.90845948 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M20.2922221,0.0189300136 L19.6459452,0.608192022 L20.9026086,1.75399189 L18.7736085,3.69494322 L22.4446507,7.04212414 L24.5736508,5.10094555 L25.7991592,6.21833903 L26.4454361,5.62930428 L20.2922221,0.0189300136 Z" id="Fill-2" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>

@@ -14,16 +14,16 @@ $(document).ready( function () {
 	// 		console.log("no")
 	// 	}
 	// })
-	function closeAllMenus () {
-		$('.submenu').removeClass('show-sub-menu')
+	function closeAllMenus (menu) {
+		$(menu).removeClass('show-sub-menu')
 	}
 	//
 	$('#menu-item-275').click(function(){
-		closeAllMenus();
+		closeAllMenus($('.mconsultas'));
 		$('.mespecialidades').toggleClass('show-sub-menu')
 	})
 	$('#menu-item-276').click(function(){
-		closeAllMenus();
+		closeAllMenus($('.mespecialidades'));
 		$('.mconsultas').toggleClass('show-sub-menu')
 	})
 })

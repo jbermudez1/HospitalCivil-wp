@@ -903,6 +903,9 @@ footer .container .address {
   display: inline-box;
   display: inline-flex;
 }
+.news-container-text {
+  font-size: 1.2em;
+}
 .news-container-text img {
   float: right;
   margin: 2em;
@@ -1072,4 +1075,24 @@ footer .container .address {
   -o-transform: translate3d(0, 0%, 0) !important;
   -ms-transform: translate3d(0, 0%, 0) !important;
   transform: translate3d(0, 0%, 0) !important;
+}
+.single-services {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin-top: 2em;
+}
+.single-services .single-icon {
+  width: 10em;
+  text-align: center;
+}
+.single-services .single-icon img {
+  width: 70%;
+  height: auto;
+}
+.single-services .news-title .title {
+  border-bottom: solid 4px #ffa500;
 }

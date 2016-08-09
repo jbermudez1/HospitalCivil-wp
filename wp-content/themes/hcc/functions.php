@@ -13,3 +13,12 @@
 			);
 	}
 add_action('widgets_init', 'sidebar_main');
+if (class_exists('MultiPostThumbnails')) {
+
+new MultiPostThumbnails(array(
+'label' => 'Icono lateral',
+'id' => 'single-icon',
+'post_type' => 'post'
+ ) );
+
+ }

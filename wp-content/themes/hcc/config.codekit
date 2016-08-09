@@ -38,6 +38,61 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/assets\/Bitmap.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 506608,
+		"inputAbbreviatedPath": "\/img\/assets\/Bitmap.jpg",
+		"outputAbbreviatedPath": "\/img\/assets\/Bitmap.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/assets\/Captura de pantalla 2016-05-23 a las 8.21.04 p.m..jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 579478,
+		"inputAbbreviatedPath": "\/img\/assets\/Captura de pantalla 2016-05-23 a las 8.21.04 p.m..jpg",
+		"outputAbbreviatedPath": "\/img\/assets\/Captura de pantalla 2016-05-23 a las 8.21.04 p.m..jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/assets\/Captura de pantalla 2016-05-24 a las 12.05.11 p.m..jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 366083,
+		"inputAbbreviatedPath": "\/img\/assets\/Captura de pantalla 2016-05-24 a las 12.05.11 p.m..jpg",
+		"outputAbbreviatedPath": "\/img\/assets\/Captura de pantalla 2016-05-24 a las 12.05.11 p.m..jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/assets\/hcc-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22961,
+		"inputAbbreviatedPath": "\/img\/assets\/hcc-logo.png",
+		"outputAbbreviatedPath": "\/img\/assets\/hcc-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/assets\/submit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4292,
+		"inputAbbreviatedPath": "\/img\/assets\/submit.png",
+		"outputAbbreviatedPath": "\/img\/assets\/submit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/banner-single.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -407,6 +462,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
+		},
+	"\/lib\/style\/menus.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/lib\/style\/menus.styl",
+		"outputAbbreviatedPath": "\/lib\/css\/menus.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
 		},
 	"\/lib\/style\/style.styl": {
 		"createSourceMap": 0,

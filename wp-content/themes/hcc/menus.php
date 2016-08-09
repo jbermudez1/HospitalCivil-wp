@@ -1,12 +1,12 @@
 <section class="menus">
-          <div class="submenu mconsultas" >
+          <div class="submenu mespecialidades" >
             <div class="container">
               <div class="list-wrap">
                 <div class="box">
                   <ul>
                     <li>
                       <span>
-<img src="<?php echo get_template_directory_uri().'/img/assets/icons/fluoroscopia.svg' ?>"/>
+                      <img src="<?php echo get_template_directory_uri().'/img/assets/icons/fluoroscopia.svg' ?>"/>
                       </span>
                       <span>
                         <a href=" <?php echo esc_url( get_permalink(170) ); ?>">Fluroscopía</a></span>
@@ -95,4 +95,31 @@
               </div>
             </div>
           </div>
+          <!-- MENU CONSULTAS -->
+          <div class="submenu mconsultas" >
+            <div class="container">
+              <div class="list-wrap">
+                <div class="box">
+                  <ul>
+                    <li>
+                      <span>
+                        <a href="#">Menu uno</a>
+                      </span>
+                    </li>
+                  </ul>
+                  s
+                </div>
+                <div class="box">
+                  s
+                </div>
+                <div class="box">
+                  s
+                </div>
+                <div class="box">
+                  s
+                </div>
+              </div>
+            </div>
+          </div>
+
       </section>

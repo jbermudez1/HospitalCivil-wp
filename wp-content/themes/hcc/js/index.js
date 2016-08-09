@@ -14,9 +14,16 @@ $(document).ready( function () {
 	// 		console.log("no")
 	// 	}
 	// })
-
+	function closeAllMenus () {
+		$('.submenu').removeClass('show-sub-menu')
+	}
 	//
 	$('#menu-item-275').click(function(){
+		closeAllMenus();
+		$('.mespecialidades').toggleClass('show-sub-menu')
+	})
+	$('#menu-item-276').click(function(){
+		closeAllMenus();
 		$('.mconsultas').toggleClass('show-sub-menu')
 	})
 })

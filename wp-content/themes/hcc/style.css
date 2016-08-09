@@ -284,66 +284,6 @@ nav ul.show-sub-menu {
   -ms-transform: translate3d(0, 3.8em, 0) !important;
   transform: translate3d(0, 3.8em, 0) !important;
 }
-.menus {
-  position: relative;
-}
-.menus .mconsultas {
-  background-color: #88d9ee;
-}
-.menus .submenu {
-  width: 100%;
-  height: 20em;
-  position: absolute;
-  -webkit-transform: translate3d(0, -100%, 0);
-  -moz-transform: translate3d(0, -100%, 0);
-  -o-transform: translate3d(0, -100%, 0);
-  -ms-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.menus .submenu .container {
-  padding-top: 2em;
-}
-.menus .submenu .container .list-wrap {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-}
-.menus .submenu .container .list-wrap .box {
-  width: 25%;
-}
-.menus .submenu .container .list-wrap .box ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-.menus .submenu .container .list-wrap .box ul li {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-.menus .submenu .reset-submenu {
-  -webkit-transform: translate3d(0, 0%, 0) !important;
-  -moz-transform: translate3d(0, 0%, 0) !important;
-  -o-transform: translate3d(0, 0%, 0) !important;
-  -ms-transform: translate3d(0, 0%, 0) !important;
-  transform: translate3d(0, 0%, 0) !important;
-  position: relative !important;
-}
-.menus .show-sub-menu {
-  -webkit-transform: translate3d(0, 0%, 0) !important;
-  -moz-transform: translate3d(0, 0%, 0) !important;
-  -o-transform: translate3d(0, 0%, 0) !important;
-  -ms-transform: translate3d(0, 0%, 0) !important;
-  transform: translate3d(0, 0%, 0) !important;
-}
 .banner {
   height: 50%;
   display: -webkit-box;
@@ -1046,4 +986,90 @@ footer .container .address {
     display: box;
     display: flex;
   }
+}
+.menus {
+  position: relative;
+}
+.menus .mespecialidades {
+  background-color: #88d9ee;
+}
+.menus .mconsultas {
+  background-color: #f00;
+}
+.menus .submenu {
+  width: 100%;
+  height: 22em;
+  position: absolute;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menus .submenu .container {
+  padding-top: 2em;
+}
+.menus .submenu .container .list-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.menus .submenu .container .list-wrap .box {
+  width: 25%;
+}
+.menus .submenu .container .list-wrap .box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.menus .submenu .container .list-wrap .box ul li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menus .submenu .container .list-wrap .box ul li a {
+  color: #fff;
+}
+.menus .submenu .container .list-wrap .box ul li:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+.menus .submenu .reset-submenu {
+  -webkit-transform: translate3d(0, 0%, 0) !important;
+  -moz-transform: translate3d(0, 0%, 0) !important;
+  -o-transform: translate3d(0, 0%, 0) !important;
+  -ms-transform: translate3d(0, 0%, 0) !important;
+  transform: translate3d(0, 0%, 0) !important;
+  position: relative !important;
+}
+.menus .show-sub-menu {
+  -webkit-transform: translate3d(0, 0%, 0) !important;
+  -moz-transform: translate3d(0, 0%, 0) !important;
+  -o-transform: translate3d(0, 0%, 0) !important;
+  -ms-transform: translate3d(0, 0%, 0) !important;
+  transform: translate3d(0, 0%, 0) !important;
 }

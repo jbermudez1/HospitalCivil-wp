@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <div class="wrap">
+	  <section class="menus">
+    <?php include (TEMPLATEPATH."/mespecialidades.php") ?>
+    <?php include (TEMPLATEPATH."/mconsultas.php") ?>
+  </section>
 <section class="banner-single" style="background-image: url('<? echo get_template_directory_uri()."/img/banner-single.jpg" ?>')">
 	<div class="container">
 		<small><?php echo the_category(); ?></small>

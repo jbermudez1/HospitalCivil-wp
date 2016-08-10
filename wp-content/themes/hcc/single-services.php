@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
 <div class="wrap">
+    <section class="menus">
+    <?php include (TEMPLATEPATH."/mespecialidades.php") ?>
+    <?php include (TEMPLATEPATH."/mconsultas.php") ?>
+
+  </section>
  <section class="container single-services" style="min-height: 100vh">
   <div class="single-icon">
     <?php 

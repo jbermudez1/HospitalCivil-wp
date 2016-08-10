@@ -6,9 +6,8 @@ include(TEMPLATEPATH . '/single-home.php');
 // servicios y especialidades
 if ( in_category('9') ) {
 include(TEMPLATEPATH . '/single-services.php');
-} if ( in_category('11') ) {
-include(TEMPLATEPATH . '/single-services.php');
-} else {
+} 
+else {
 include(TEMPLATEPATH . '/single-all.php');
 }
 ?>

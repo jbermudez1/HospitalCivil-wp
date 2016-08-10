@@ -14,6 +14,9 @@ $(document).ready( function () {
 	// 		console.log("no")
 	// 	}
 	// })
+
+	
+	
 	function closeAllMenus (menu) {
 		$(menu).removeClass('show-sub-menu')
 	}

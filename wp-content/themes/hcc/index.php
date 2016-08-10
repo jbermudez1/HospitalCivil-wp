@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 <div class="wrap">
   <!-- menus -->
-  <?php include (TEMPLATEPATH."/menus.php") ?>
+  <section class="menus">
+    <?php include (TEMPLATEPATH."/mespecialidades.php") ?>
+    <?php include (TEMPLATEPATH."/mconsultas.php") ?>
+  </section>
+  
   <!--  -->
     <section class="banner" style="background-image: url('<? echo get_template_directory_uri()."/img/banner2.jpg" ?>')">
       <div class="color" >

@@ -9,7 +9,7 @@
                       <img src="<?php echo get_template_directory_uri().'/img/assets/icons/fluoroscopia.svg' ?>"/>
                       </span>
                       <span>
-                        <a href=" <?php echo esc_url( get_permalink(170) ); ?>">Fluroscopía</a></span>
+                        <a href=" <?php echo esc_url( get_permalink(135) ); ?>">Fluroscopía</a></span>
                     </li>
                     <li>
                       <span><img src="<?php echo get_template_directory_uri().'/img/assets/icons/mamografia.svg' ?>"/>

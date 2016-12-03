@@ -7,6 +7,17 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Oxygen:400,700,300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,500");
+.page ul {
+  list-style: none;
+}
+.page li:before {
+  content: '•';
+  padding-right: 0.5em;
+  color: #2f96cc;
+}
+.gray {
+  background-color: #f4f4f4 !important;
+}
 .fontb {
   color: #2f96cc;
 }
@@ -18,6 +29,7 @@
 body,
 html {
   height: 100%;
+  font-family: 'Oxygen';
 }
 body {
   color: #808080;
@@ -216,6 +228,7 @@ nav ul {
 nav ul li {
   padding-top: 1em;
   padding-bottom: 1em;
+  position: relative;
   padding-left: 1.5em;
   padding-right: 1.5em;
   border-right: solid 1px #d3d3d3;
@@ -244,7 +257,12 @@ nav ul li a:link {
   text-decoration: none;
 }
 nav ul ul.sub-menu {
-  display: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -o-box-orient: vertical;
@@ -252,8 +270,13 @@ nav ul ul.sub-menu {
   -ms-flex-flow: column;
   flex-flow: column;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   background-color: #2f96cc;
   width: 15em;
   height: auto;
@@ -264,6 +287,7 @@ nav ul ul.sub-menu {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: -1;
 }
 nav ul ul.sub-menu li {
   border-right: none !important;
@@ -284,8 +308,10 @@ nav ul.show-sub-menu {
   -ms-transform: translate3d(0, 3.8em, 0) !important;
   transform: translate3d(0, 3.8em, 0) !important;
 }
+.rslides_container {
+  margin-bottom: 0 !important;
+}
 .banner {
-  height: 50%;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -406,6 +432,17 @@ nav ul.show-sub-menu {
   padding: 0.5em;
   height: 100%;
 }
+.welcome-post {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.welcome-post div {
+  padding-left: 2em;
+}
 .flex-container {
   display: -webkit-box;
   display: -moz-box;
@@ -454,6 +491,9 @@ nav ul.show-sub-menu {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.flex-container div a {
+  color: #fff;
 }
 .flex-container div:hover {
   opacity: 0.5;
@@ -970,8 +1010,7 @@ footer .container .address {
     color: #ff0;
   }
   .main {
-    top: -1em;
-    margin-top: 0;
+    margin-top: 1em;
   }
   .wrap-icons {
     display: -webkit-box;
@@ -990,14 +1029,19 @@ footer .container .address {
     display: flex;
   }
 }
+@media (min-width: 1200px) {
+  .banner .color h3 {
+    font-size: 4em;
+  }
+}
 .menus {
   position: relative;
 }
 .menus .mespecialidades {
-  background-color: #88d9ee;
+  background-color: #2a4f7b;
 }
 .menus .mconsultas {
-  background-color: #2a4f7b;
+  background-color: #52bee1;
 }
 .menus .menu-fijo {
   position: relative !important;
@@ -1008,7 +1052,7 @@ footer .container .address {
   transform: translate3d(0, 0%, 0) !important;
 }
 .menus .submenu {
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   height: 27em;
   position: absolute;
@@ -1067,6 +1111,7 @@ footer .container .address {
 .menus .submenu .container .list-wrap .box ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 .menus .submenu .container .list-wrap .box ul li:hover {
   background-color: rgba(255,255,255,0.3);

@@ -54,7 +54,7 @@
                 <div class="box">
                   <ul>
                     <li>
-                      <span><img src="<?php echo get_template_directory_uri().'/img/assets/icons/resonancia-magnética.svg' ?>"/></span>
+                      <span><img src="<?php echo get_template_directory_uri().'/img/assets/icons/resonancia-magnetica.svg' ?>"/></span>
                       <span><a href=" <?php echo esc_url( get_permalink(141) ); ?>">Resonancia Magnética</a></span>
                     </li>
                     <li>
@@ -78,7 +78,7 @@
                       <span><a href=" <?php echo esc_url( get_permalink(150) ); ?>">Laboratorio de Análisis Clínicos</a></span>
                     </li>
                     <li>
-                      <span><img src="<?php echo get_template_directory_uri().'/img/assets/icons/rehabilitación.svg' ?>"/></span>
+                      <span><img src="<?php echo get_template_directory_uri().'/img/assets/icons/rehabilitacion.svg' ?>"/></span>
                       <span><a href=" <?php echo esc_url( get_permalink(152) ); ?>">Unidad de Rehabilitación Física</a></span>
                     </li>
                     <li>

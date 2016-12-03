@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="wrap">
-	  <section class="menus">
+<section class="menus">
     <?php include (TEMPLATEPATH."/mespecialidades.php") ?>
     <?php include (TEMPLATEPATH."/mconsultas.php") ?>
   </section>

@@ -12,8 +12,18 @@
       </div>
     </footer>
   </div> <!-- wrap-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="<? echo get_template_directory_uri().'/js/index.js' ?>"></script>
+ <script>
+  // $(function() {
+  //   $(".rslides").responsiveSlides({
+  //     pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  // prevText: "Previous",   // String: Text for the "previous" button
+  // nextText: "Next",       // String: Text for the "next" button
+  // maxwidth: "1500",    
+  //   });
+  // });
+// </script>
+    
   </body>
 </html>

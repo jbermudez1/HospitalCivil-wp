@@ -23,6 +23,20 @@ $hc-color = #2f96cc
 $hc-light = #52BEE1
 $comforta = 'Oxygen', sans-serif
 $height-nav = 9em
+
+
+// global
+.page
+	ul
+		list-style none
+	li
+		&:before
+			content '•'
+			padding-right 0.5em
+			color $hc-color
+	
+.gray 
+	background-color #F4F4F4 !important
 .fontb
 	color $hc-color
 .fblue
@@ -31,6 +45,7 @@ $height-nav = 9em
 	background-color white
 body,html
 	height 100%
+	font-family 'Oxygen'
 body
 	color gray
 	background-color $hc-light
@@ -113,14 +128,20 @@ nav
 		padding-left 0
 		height 100%
 		margin-bottom 0
+		// xs
+		// display flex
+		// flex-wrap wrap
+		
+		
 		li
 			padding-top 1em
 			padding-bottom 1em
-			// position relative
+			position relative
 			padding-left 1.5em
 			padding-right 1.5em
 			border-right solid 1px lightgray
 			transition all .3s ease
+	
 			&:hover
 				background-color $hc-color
 				a
@@ -133,17 +154,18 @@ nav
 				&:hover, &:visited, &:active, &:link 
 					text-decoration none	
 		ul.sub-menu
-			display none
+			display flex
 			flex-flow column
 			position absolute
-			left 0
+			right 0
 			top 0
-			// transform translate3d(0 ,-100%,0 )
+			transform translate3d(0 ,-100%,0 )
 			background-color $hc-color
 			width 15em
 			height auto
 			border-radius 0 0 10px 10px
 			transition all .3s ease
+			z-index -1
 			li
 				border-right none !important
 				padding 0.6em
@@ -156,9 +178,10 @@ nav
 				color white
 		&.show-sub-menu
 			transform translate3d(0 ,3.8em,0 ) !important
-
+.rslides_container
+	margin-bottom 0 !important
 .banner
-	height 50%
+	// height 50%
 	display flex
 	font-family $comforta
 	// background-image url('../img/banner.jpg')
@@ -229,6 +252,10 @@ nav
 			background-color white
 			padding 0.5em
 			height 100%
+.welcome-post
+	display flex
+	div
+		padding-left 2em
 // consultas
 .flex-container
 	display flex
@@ -247,6 +274,8 @@ nav
 		text-shadow 0px 0px 8px gray
 		cursor pointer
 		transition all 0.3s ease
+		a
+			color white
 		&:hover
 			opacity 0.5
 	.c1
@@ -548,17 +577,18 @@ footer
 					color yellow
 	// 
 	.main
-		top -1em
-		margin-top 0
+		// top -1em
+		margin-top 1em
 	.wrap-icons
 		display flex
 	.person
 		display flex
 @media (min-width: 1200px)
 	.banner
+		// min-height 3em
 		.color
 			h3
-				// font-size 4em
+				font-size 4em
 @import 'menus.styl'
 @import 'single-services.styl'
 

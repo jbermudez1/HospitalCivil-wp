@@ -1,37 +1,51 @@
 <?php get_header(); ?>
-<div class="wrap">
+
+<div class="wrap ">
+
   <!-- menus -->
-  <section class="menus">
+  <section class="menus hidden-xs">
     <?php include (TEMPLATEPATH."/mespecialidades.php") ?>
     <?php include (TEMPLATEPATH."/mconsultas.php") ?>
   </section>
   
   <!--  -->
-    <section class="banner" style="background-image: url('<? echo get_template_directory_uri()."/img/banner2.jpg" ?>')">
-      <div class="color" >
-        <div>
-          <h3><span>Ven</span> y programa tu consulta</h3>
-          <hr>
-          <p>78 Años brindando atención oportuna a tu alcance en mas de 23 especialidades médicas y formamdo médicos profesionales.</p>
-          <img src='<? echo get_template_directory_uri()."/img/icondr.png" ?>'>
-        </div>
-      </div>
-      <div class="photo hidden-xs" style="background-image: url('<? echo get_template_directory_uri()."/img/banner3.jpg" ?>')"></div>
-    </section>
+    <section class="banner hidden-xs" >
+      <?php if ( function_exists( 'show_simpleresponsiveslider' ) ) show_simpleresponsiveslider(); ?>
+     </section>
     <section class="main container">
       <article class="box">
         <div class="box__main">
           <div class="flex-container">
-            <div class="c1">Medicina General</div>
-            <div class="c2">Medicina Interna</div>
-            <div class="c3">Traumatología</div>
-            <div class="c4">Rehabilitación Física</div>
-            <div class="c5">Nutrición</div>
-            <div class="c6">Pediatría</div>
-            <div class="c7">Urología</div>
-            <div class="c8">Odontología</div>
-            <div class="c9">Neurología</div>
-            <div class="c10">Ginecología</div>
+            <div class="c1">
+              <a href="<?php echo esc_url( get_permalink(172) ); ?>">Urgencias</a>
+            </div>
+            <div class="c2">
+             <a href="<?php echo esc_url( get_permalink(176) ); ?>">Maxilofacial</a>
+            </div>
+            <div class="c3">
+              <a href="<?php echo esc_url( get_permalink(188) ); ?>">Traumatología</a>
+            </div>
+            <div class="c4">
+              <a href="<?php echo esc_url( get_permalink(178) ); ?>">Rehabilitación Física</a>
+            </div>
+            <div class="c5">
+              <a href="<?php echo esc_url( get_permalink(182) ); ?>">Nutrición</a>
+            </div>
+            <div class="c6">
+              <a href="<?php echo esc_url( get_permalink(186) ); ?>">Pediatría</a>
+            </div>
+            <div class="c7">
+              <a href="<?php echo esc_url( get_permalink(190) ); ?>">Urología</a>
+            </div>
+            <div class="c8">
+              <a href="<?php echo esc_url( get_permalink(184) ); ?>">Odontología</a>
+            </div>
+            <div class="c9">
+              <a href="<?php echo esc_url( get_permalink(180) ); ?>">Neurología</a>
+            </div>
+            <div class="c10">
+              <a href="<?php echo esc_url( get_permalink(174) ); ?>">Ginecología</a>
+            </div>
           </div>
         </div>
       </article>
@@ -44,7 +58,21 @@
                 </div>
                 <hr class="green">
                 <br>
-                <br>
+                <div class="welcome-post"> 
+                  <div>
+                    <?php 
+                  $post = get_post( 7 ); 
+                  $content = $post->post_content;
+                  $title = $post->post_title;
+                ?>
+                <h2 class="title-post"><?php the_title(); ?></h2>
+                <?php echo $content ?>
+                  </div>
+                  <div>
+                    <?php echo get_the_post_thumbnail(); ?>
+                  </div>
+
+                </div>
                 <hr>
 <!--                 <ul>
                   <li>Banco de Sangre</li>
@@ -78,35 +106,12 @@
                 <br>
                 <br>
           </section>
-              <!-- <section class="welcome-post"> 
-                <?php 
-                  $post = get_post( 7 ); 
-                  $content = $post->post_content;
-                  $title = $post->post_title;
-                ?>
-                <h2 class="title-post"><?php the_title(); ?></h2>
-                <?php echo $content ?>
-
-              </section> -->
+          
               <section class="home-post">
                 <div class="title-section">
                   <h3>Investigaciones<span> recientes<span></h3>
                 </div>
                 <div class="home-post__container">
-                  <!-- <div class="home-post__container__wrap">
-                    <div class="info">info</div>
-                  </div>
-                  <div class="home-post__container__wrap">
-                    <div class="info">info</div>
-                  </div>
-                  <div class="home-post__container__wrap">
-                    <div class="info">info</div>
-                  </div>
-                  <div class="home-post__container__wrap">
-                    <div class="info">info</div>
-                  </div> -->
-               
-               <!-- Start the Loop. -->
               <?php query_posts( 'cat=3' ) ?>
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -132,6 +137,7 @@
                  <?php endif; ?>
               </div>
             </section>
+
             <section class="home-post">
                 <div class="title-section">
                   <h3>Conoce algunos de nuestros<span> Especialistas<span></h3>
